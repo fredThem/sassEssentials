@@ -26,6 +26,16 @@
 }
 
 .jumbotron {
-		background: $darkblue;
-		height: 600px;
+		@include backImage(
+      '../../builds/sassEssentials/images/water.jpg',
+      600px, top center
+      );
 }
+
+.bridge {
+		@include backImage(
+      '../../builds/sassEssentials/images/bridge.jpg',
+    300px, center center
+      );
+}
+
